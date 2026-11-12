@@ -1,0 +1,1035 @@
+/* ========================================
+   zip콕 공통 CSS
+   적용 화면: HTML 5개
+   메인 색상: 보라색
+======================================== */
+
+/* 1. 전체 기본 설정 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  background-color: #faf8ff;
+  color: #28183f;
+}
+
+a {
+  color: inherit;
+}
+
+main {
+  width: 100%;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  flex: 1;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.4;
+}
+
+p {
+  line-height: 1.7;
+}
+
+header {
+  background-color: white;
+  border-bottom: 1px solid #e9e2f5;
+}
+
+header h1 {
+  margin: 0;
+  color: #6d28d9;
+}
+
+footer {
+  padding: 25px 20px;
+  text-align: center;
+  color: #8b80a0;
+  font-size: 13px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ========================================
+   2. index.html
+   zip콕 체험 시작 화면
+======================================== */
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 22px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-inner h1 {
+  font-size: 30px;
+}
+
+.header-inner p {
+  margin: 0;
+  color: #8b80a0;
+  font-size: 12px;
+}
+
+.intro {
+  min-height: 560px;
+  padding: 100px 25px;
+  border-radius: 22px;
+  background-color: #f1ebff;
+  text-align: center;
+}
+
+.intro-label {
+  margin: 0 0 20px;
+  color: #6d28d9;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.intro h2 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.4;
+}
+
+.intro-description {
+  margin: 25px 0 35px;
+  color: #685c7a;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* 메인 체험하기 버튼 */
+
+.start-button {
+  display: inline-block;
+  padding: 20px 52px;
+  background-color: #6d28d9;
+  border-radius: 12px;
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.start-button:hover {
+  background-color: #5520a8;
+}
+
+.intro-note {
+  margin-top: 20px;
+  color: #8b80a0;
+  font-size: 14px;
+}
+
+/* ========================================
+   3. platform.html
+   도토리마켓 화면
+======================================== */
+
+.platform-header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.platform-header h1 {
+  font-size: 25px;
+}
+
+.platform-back {
+  color: #685c7a;
+  text-decoration: none;
+}
+
+.platform-demo-label {
+  padding: 7px 12px;
+  background-color: #f1eafd;
+  color: #6d28d9;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.platform-main {
+  max-width: 850px;
+}
+
+.platform-eyebrow {
+  color: #6d28d9;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.platform-title {
+  margin: 0;
+  font-size: 34px;
+}
+
+.platform-description {
+  color: #685c7a;
+}
+
+/* 거래 정보 카드 */
+
+.platform-card {
+  padding: 28px;
+  background-color: white;
+  border: 1px solid #e6dff4;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(70, 40, 110, 0.06);
+}
+
+.platform-product {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee8f7;
+}
+
+.platform-product-image {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #f0ebf9;
+  border-radius: 15px;
+  font-size: 55px;
+}
+
+.platform-small-label {
+  margin: 0;
+  color: #8b80a0;
+  font-size: 13px;
+}
+
+.platform-product h3 {
+  margin: 7px 0;
+  font-size: 22px;
+}
+
+.platform-price {
+  margin: 5px 0;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.platform-complete-label {
+  color: #6d28d9;
+  font-size: 13px;
+}
+
+/* zip콕 주소 등록 상태 */
+
+.platform-safe-card {
+  margin-top: 25px;
+  padding: 25px;
+  background-color: #f5f0ff;
+  border-radius: 15px;
+}
+
+.platform-safe-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.platform-safe-heading h3 {
+  margin: 0;
+}
+
+.platform-waiting {
+  padding: 7px 12px;
+  background-color: #e9def9;
+  color: #6d28d9;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.platform-safe-description {
+  color: #685c7a;
+  font-size: 14px;
+}
+
+.platform-status-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px;
+  background-color: white;
+  border-bottom: 1px solid #eee8f7;
+}
+
+.platform-unregistered {
+  color: #b03a63;
+}
+
+.platform-address-button {
+  display: block;
+  margin-top: 20px;
+  padding: 17px;
+  background-color: #6d28d9;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.platform-address-button:hover {
+  background-color: #5520a8;
+}
+
+.platform-help {
+  color: #8b80a0;
+  font-size: 13px;
+}
+
+/* 플랫폼 DB 표시 영역 */
+
+.platform-db-card {
+  margin-top: 25px;
+  padding: 24px;
+  border: 1px solid #e9e2f5;
+  border-radius: 15px;
+}
+
+.platform-db-card h3 {
+  margin-top: 0;
+}
+
+.platform-db-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 9px 0;
+  font-size: 14px;
+}
+
+.platform-db-note {
+  color: #8b80a0;
+  font-size: 12px;
+}
+
+/* ========================================
+   4. address.html
+   zip콕 주소 입력 화면
+======================================== */
+
+.address-header {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.address-header a {
+  text-decoration: none;
+  color: #685c7a;
+}
+
+.address-header h1 {
+  font-size: 24px;
+}
+
+.address-main {
+  max-width: 750px;
+}
+
+/* 주소 입력 안내 */
+
+.address-info {
+  padding: 25px;
+  background-color: #f1ebff;
+  border-radius: 15px;
+}
+
+.address-info h2 {
+  margin-top: 0;
+}
+
+.address-info p {
+  color: #685c7a;
+}
+
+/* 주소 입력 폼 */
+
+.address-form-section {
+  margin-top: 25px;
+  padding: 30px;
+  background-color: white;
+  border: 1px solid #e6dff4;
+  border-radius: 18px;
+}
+
+.address-form-section h2 {
+  margin-top: 0;
+}
+
+.address-form fieldset {
+  margin-bottom: 25px;
+  padding: 18px;
+  border: 1px solid #ded3f0;
+  border-radius: 10px;
+}
+
+.address-form legend {
+  padding: 0 8px;
+  font-weight: bold;
+}
+
+.address-form fieldset label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.address-form input[type="radio"] {
+  accent-color: #6d28d9;
+}
+
+.address-form p {
+  margin: 18px 0;
+}
+
+.address-form p label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.address-form input[type="text"],
+.address-form input[type="tel"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #d8cce8;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 15px;
+}
+
+.address-form input:focus {
+  outline: 2px solid #8b5cf6;
+  outline-offset: 1px;
+}
+
+/* 개인정보 보호 안내 */
+
+.address-notice {
+  margin-top: 25px;
+  padding: 25px;
+  background-color: #f5f0ff;
+  border-radius: 15px;
+}
+
+.address-notice h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.address-notice li {
+  margin-bottom: 10px;
+  color: #685c7a;
+  line-height: 1.7;
+}
+
+/* 주소 등록 버튼 */
+
+.address-actions {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.address-return-button {
+  display: block;
+  padding: 19px;
+  background-color: #6d28d9;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.address-return-button:hover {
+  background-color: #5520a8;
+}
+
+.address-actions p {
+  color: #8b80a0;
+  font-size: 12px;
+}
+
+/* ========================================
+   5. 4.delivery.html
+   판매자 배송 상태 화면
+======================================== */
+
+.delivery-header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.delivery-header h1 {
+  font-size: 24px;
+}
+
+.delivery-back {
+  color: #685c7a;
+  text-decoration: none;
+}
+
+.delivery-safe-code {
+  color: #6d28d9;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.delivery-main {
+  max-width: 800px;
+}
+
+.delivery-label {
+  color: #6d28d9;
+  font-weight: bold;
+}
+
+.delivery-intro h2 {
+  margin: 5px 0;
+  font-size: 32px;
+}
+
+.delivery-intro > p:last-child {
+  color: #685c7a;
+}
+
+/* 배송 진행 상태 */
+
+.delivery-status {
+  margin-top: 25px;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid #e6dff4;
+  border-radius: 18px;
+}
+
+.delivery-status h3 {
+  margin-top: 0;
+}
+
+.delivery-steps {
+  margin-bottom: 0;
+  padding-left: 25px;
+}
+
+.delivery-steps li {
+  padding: 12px 5px;
+  border-bottom: 1px solid #eee8f7;
+}
+
+.delivery-steps li::marker {
+  color: #6d28d9;
+  font-weight: bold;
+}
+
+/* 수거 코드 */
+
+.delivery-pickup {
+  margin-top: 25px;
+  padding: 35px 20px;
+  background-color: #f1ebff;
+  border: 2px solid #c4b5fd;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.delivery-pickup h3 {
+  margin-top: 0;
+}
+
+.delivery-pickup-code {
+  margin: 20px 0;
+  color: #6d28d9;
+  font-size: 52px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.delivery-pickup-date {
+  color: #685c7a;
+  font-size: 14px;
+}
+
+/* 배송 안내 */
+
+.delivery-notice {
+  margin-top: 25px;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid #e6dff4;
+  border-radius: 15px;
+}
+
+.delivery-notice h3 {
+  margin-top: 0;
+}
+
+.delivery-notice li {
+  margin-bottom: 10px;
+  color: #685c7a;
+  line-height: 1.7;
+}
+
+/* 하단 버튼 */
+
+.delivery-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.delivery-courier-button,
+.delivery-home-button {
+  flex: 1;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.delivery-courier-button {
+  background-color: #6d28d9;
+  color: white;
+}
+
+.delivery-home-button {
+  background-color: white;
+  border: 1px solid #c4b5fd;
+  color: #6d28d9;
+}
+
+.delivery-courier-button:hover {
+  background-color: #5520a8;
+}
+
+.delivery-home-button:hover {
+  background-color: #f1ebff;
+}
+
+.delivery-demo-note {
+  margin-top: 20px;
+  text-align: center;
+  color: #8b80a0;
+  font-size: 12px;
+}
+
+/* ========================================
+   6. 5.courier.html
+   Mock 택배사 송장 화면
+======================================== */
+
+.courier-header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.courier-header h1 {
+  font-size: 24px;
+}
+
+.courier-back {
+  color: #685c7a;
+  text-decoration: none;
+}
+
+.courier-header-label {
+  color: #6d28d9;
+  font-size: 13px;
+}
+
+.courier-main {
+  max-width: 750px;
+}
+
+.courier-label {
+  color: #6d28d9;
+  font-weight: bold;
+}
+
+.courier-intro h2 {
+  margin: 5px 0;
+  font-size: 32px;
+}
+
+.courier-intro > p:last-child {
+  color: #685c7a;
+}
+
+/* 택배 송장 본문 */
+
+.courier-waybill {
+  margin-top: 30px;
+  overflow: hidden;
+  background-color: white;
+  border: 2px solid #332647;
+  border-radius: 15px;
+}
+
+.courier-waybill-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 18px 22px;
+  background-color: #332647;
+  color: white;
+}
+
+.courier-waybill-number {
+  padding: 25px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.courier-waybill-number p {
+  margin: 0 0 8px;
+  color: #685c7a;
+}
+
+.courier-waybill-number strong {
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+/* 예시 바코드 */
+
+.courier-barcode {
+  margin: 20px 30px;
+  text-align: center;
+}
+
+.courier-barcode::before {
+  content: "";
+  display: block;
+  height: 75px;
+  background: repeating-linear-gradient(
+    90deg,
+    #241438 0px,
+    #241438 3px,
+    white 3px,
+    white 6px,
+    #241438 6px,
+    #241438 8px,
+    white 8px,
+    white 12px
+  );
+}
+
+.courier-barcode span {
+  display: block;
+  margin-top: 8px;
+  color: #8b80a0;
+  font-size: 12px;
+}
+
+/* 받는 사람 / 보내는 사람 */
+
+.courier-waybill-person {
+  padding: 22px 25px;
+  border-top: 1px solid #ddd;
+}
+
+.courier-waybill-person h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.courier-waybill-person strong {
+  font-size: 20px;
+}
+
+.courier-waybill-person p {
+  margin-bottom: 0;
+  color: #685c7a;
+  font-size: 14px;
+}
+
+/* 송장 수거 코드 */
+
+.courier-waybill-pickup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 25px;
+  background-color: #f1ebff;
+  border-top: 1px solid #ddd;
+}
+
+.courier-waybill-pickup strong {
+  color: #6d28d9;
+  font-size: 28px;
+}
+
+/* 송장 안내 */
+
+.courier-notice {
+  margin-top: 25px;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid #e6dff4;
+  border-radius: 15px;
+}
+
+.courier-notice h3 {
+  margin-top: 0;
+}
+
+.courier-notice li {
+  margin-bottom: 10px;
+  color: #685c7a;
+  line-height: 1.7;
+}
+
+.courier-actions {
+  margin-top: 25px;
+}
+
+.courier-return-button {
+  display: block;
+  padding: 18px;
+  background-color: #6d28d9;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.courier-return-button:hover {
+  background-color: #5520a8;
+}
+
+/* ========================================
+   7. 작은 화면 대응
+======================================== */
+
+@media (max-width: 600px) {
+  main {
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  /* 메인 화면 */
+
+  .header-inner {
+    padding: 18px;
+  }
+
+  .header-inner h1 {
+    font-size: 25px;
+  }
+
+  .header-inner p {
+    font-size: 10px;
+  }
+
+  .intro {
+    min-height: 480px;
+    padding: 80px 15px;
+  }
+
+  .intro h2 {
+    font-size: 34px;
+  }
+
+  .intro-description {
+    font-size: 15px;
+  }
+
+  .start-button {
+    padding: 18px 28px;
+    font-size: 23px;
+  }
+
+  /* 도토리마켓 */
+
+  .platform-header-inner,
+  .delivery-header-inner,
+  .courier-header-inner {
+    padding: 17px 15px;
+  }
+
+  .platform-header h1,
+  .delivery-header h1,
+  .courier-header h1 {
+    font-size: 19px;
+  }
+
+  .platform-demo-label,
+  .delivery-safe-code,
+  .courier-header-label {
+    font-size: 10px;
+  }
+
+  .platform-card {
+    padding: 16px;
+  }
+
+  .platform-product {
+    gap: 12px;
+  }
+
+  .platform-product-image {
+    width: 85px;
+    height: 85px;
+    font-size: 35px;
+  }
+
+  .platform-product h3 {
+    font-size: 18px;
+  }
+
+  .platform-price {
+    font-size: 19px;
+  }
+
+  .platform-safe-card,
+  .platform-db-card {
+    padding: 16px;
+  }
+
+  /* 주소 입력 */
+
+  .address-header {
+    padding: 18px 15px;
+    gap: 15px;
+  }
+
+  .address-header h1 {
+    font-size: 20px;
+  }
+
+  .address-info,
+  .address-form-section,
+  .address-notice {
+    padding: 20px;
+  }
+
+  .address-form fieldset label {
+    margin-bottom: 10px;
+  }
+
+  /* 배송 상태 */
+
+  .delivery-status,
+  .delivery-notice {
+    padding: 20px;
+  }
+
+  .delivery-pickup-code {
+    font-size: 42px;
+  }
+
+  .delivery-actions {
+    flex-direction: column;
+  }
+
+  /* 택배사 송장 */
+
+  .courier-waybill-number strong {
+    font-size: 24px;
+  }
+
+  .courier-waybill-header {
+    padding: 15px;
+  }
+
+  .courier-waybill-person {
+    padding: 18px;
+  }
+
+  .courier-waybill-pickup {
+    padding: 18px;
+  }
+
+  .courier-notice {
+    padding: 20px;
+  }
+}
+
+
+/* 판매자·구매자 입력값 분리: 페이지 이동 중에는 각자 값 유지 */
+.buyer-fields {
+    display: none;
+}
+
+.address-form:has(#role-buyer:checked) .seller-fields {
+    display: none;
+}
+
+.address-form:has(#role-buyer:checked) .buyer-fields {
+    display: block;
+}
+
+
+/* 등록 완료 시연 화면 전용 */
+.platform-registered {
+    color: #4b2ca3;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.platform-delivery-button {
+    display: block;
+    margin-top: 12px;
+    padding: 17px;
+    background-color: #ffffff;
+    border: 2px solid #6d28d9;
+    border-radius: 10px;
+    color: #6d28d9;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.platform-delivery-button:hover {
+    background-color: #ede9fe;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zip콕 | Mock 택배사 송장</title>
+    <!-- 공통 CSS는 마지막 단계에서 한꺼번에 디자인합니다. -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="courier-page">
+
+    <!-- 1. 택배사 화면 상단 -->
+    <header class="courier-header">
+        <div class="courier-header-inner">
+            <a href="4. delivery.html" class="courier-back">← 뒤로가기</a>
+            <h1>Mock 택배사</h1>
+            <span class="courier-header-label">정보 미표시 송장</span>
+        </div>
+    </header>
+
+    <main class="courier-main">
+        <!-- 2. 화면 설명 -->
+        <section class="courier-intro">
+            <p class="courier-label">zip콕 안심배송 · 송장 예시</p>
+            <h2>택배사 송장 확인</h2>
+            <p>택배 상자에 표시되는 송장을 가정한 화면입니다.</p>
+        </section>
+
+        <!-- 3. 실제 주소가 드러나지 않는 송장 목업 -->
+        <section class="courier-waybill" aria-label="개인정보 비노출 송장 예시">
+            <div class="courier-waybill-header">
+                <strong>Mock 택배사</strong>
+                <span>배송 송장 · 예시</span>
+            </div>
+
+            <div class="courier-waybill-number">
+                <p>운송장번호 (예시)</p>
+                <strong>MOCK-0001</strong>
+            </div>
+
+            <div class="courier-barcode" aria-label="예시 바코드 영역">
+                <span>바코드 표시 영역 (예시)</span>
+            </div>
+
+            <div class="courier-waybill-person">
+                <h3>받는 분</h3>
+                <strong>zip콕 안심배송</strong>
+                <p>이름 · 연락처 · 주소 미표시</p>
+            </div>
+
+            <div class="courier-waybill-person">
+                <h3>보내는 분</h3>
+                <strong>zip콕 안심배송</strong>
+                <p>이름 · 연락처 · 주소 미표시</p>
+            </div>
+
+            <div class="courier-waybill-pickup">
+                <span>수거 코드</span>
+                <strong>ZIP-04</strong>
+            </div>
+        </section>
+
+        <!-- 4. 정보 보호 원리 안내 -->
+        <section class="courier-notice">
+            <h3>송장에 보이는 정보와 택배사 시스템의 차이</h3>
+            <ul>
+                <li>상자에 붙는 송장에는 판매자·구매자의 실제 이름, 전화번호, 주소를 표시하지 않습니다.</li>
+                <li>택배 예약 시 zip콕이 배송에 필요한 실제 주소를 택배사 시스템으로 전달하는 구조입니다.</li>
+                <li>택배 기사는 택배사 시스템에서 필요한 배송 정보를 확인하는 것을 가정합니다.</li>
+                <li>이 화면은 실제 택배사와 연동되지 않은 Mock 송장입니다.</li>
+            </ul>
+        </section>
+
+        <!-- 5. 이전 화면으로 이동 -->
+        <nav class="courier-actions" aria-label="페이지 이동">
+            <a href="4. delivery.html" class="courier-return-button">배송 상태 화면으로 돌아가기</a>
+        </nav>
+    </main>
+
+    <footer>
+        <p>zip콕 · Open Source Project · Mock 택배사 화면</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도토리마켓 | zip콕 거래 예시</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="platform-page">
+
+    <!-- 1. 도토리마켓 상단 -->
+    <header class="platform-header">
+        <div class="platform-header-inner">
+            <a href="1. index.html" class="platform-back">← 뒤로가기</a>
+            <h1>도토리마켓</h1>
+            <span class="platform-demo-label">가상 플랫폼</span>
+        </div>
+    </header>
+
+    <main class="platform-main">
+        <p class="platform-eyebrow">중고거래 택배 거래 · 예시 화면</p>
+        <h2 class="platform-title">거래 정보</h2>
+        <p class="platform-description">
+            실제 주소를 도토리마켓에 입력하지 않고, zip콕에 따로 등록하는 방식입니다.
+        </p>
+
+        <!-- 2. 거래 상품 예시 -->
+        <section class="platform-card">
+            <div class="platform-product">
+                <div class="platform-product-image" aria-hidden="true">⌨️</div>
+                <div>
+                    <p class="platform-small-label">거래 상품 (예시)</p>
+                    <h3>중고 키보드</h3>
+                    <p class="platform-price">50,000원</p>
+                    <span class="platform-complete-label">택배 거래 · 결제 완료 (예시)</span>
+                </div>
+            </div>
+
+            <!-- 3. zip콕 주소 등록 상태 (현재는 모두 미등록) -->
+            <section class="platform-safe-card">
+                <div class="platform-safe-heading">
+                    <h3>🔒 zip콕 안심주소</h3>
+                    <span class="platform-waiting">등록 대기</span>
+                </div>
+                <p class="platform-safe-description">
+                    판매자와 구매자는 실제 주소를 zip콕 페이지에 각각 입력합니다.
+                </p>
+
+                <div class="platform-status-row">
+                    <span>판매자 주소</span>
+                    <strong class="platform-unregistered">미등록</strong>
+                </div>
+                <div class="platform-status-row">
+                    <span>구매자 주소</span>
+                    <strong class="platform-unregistered">미등록</strong>
+                </div>
+
+                <!-- 이 버튼은 주소 등록 전후에 항상 표시합니다. -->
+                <a class="platform-address-button" href="2. address.html">주소 입력하기</a>
+
+                <p class="platform-help">
+                    두 사람의 주소 등록이 완료되면 이곳에 SAFE 코드와
+                    'zip콕에서 배송 상태 보기' 버튼이 나타날 예정입니다.
+                </p>
+                <!-- 등록 전에는 배송 상태 보기 버튼을 넣지 않습니다. -->
+            </section>
+
+            <!-- 4. 플랫폼에는 실제 주소가 없다는 점을 보여주는 영역 -->
+            <section class="platform-db-card">
+                <h3>도토리마켓에 표시되는 거래 정보</h3>
+                <div class="platform-db-row"><span>거래 ID</span><strong>T-0001</strong></div>
+                <div class="platform-db-row"><span>판매자 SAFE 코드</span><strong>미등록</strong></div>
+                <div class="platform-db-row"><span>구매자 SAFE 코드</span><strong>미등록</strong></div>
+                <div class="platform-db-row"><span>실제 주소</span><strong>없음</strong></div>
+                <p class="platform-db-note">도토리마켓에는 실제 주소 대신 SAFE 코드만 보관하도록 설계합니다.</p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>zip콕 · 화면 제작 단계의 예시입니다. 실제 저장 기능은 아직 연결되지 않았습니다.</p>
+    </footer>
+</body>
+</html>
