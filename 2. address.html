@@ -1,153 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zip콕 | 주소 입력</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body class="address-page">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="address-page">
+
     <header class="address-header">
-      <a href="3. platform.html">← 뒤로가기</a>
-      <h1>zip콕 주소 입력</h1>
+        <a href="3. platform.html">← 뒤로가기</a>
+        <h1>zip콕 주소 입력</h1>
     </header>
 
     <main class="address-main">
-      <section class="address-info">
-        <h2>안심주소 등록</h2>
-        <p>판매자와 구매자의 주소를 각각 입력해 주세요.</p>
-        <p>
-          도토리마켓에는 실제 주소 대신 SAFE 코드를 전달하도록 설계한
-          서비스입니다.
-        </p>
-      </section>
+        <section class="address-info">
+            <h2>안심주소 등록</h2>
+            <p>판매자와 구매자의 주소를 각각 입력해 주세요.</p>
+            <p>도토리마켓에는 실제 주소 대신 SAFE 코드를 전달하도록 설계한 서비스입니다.</p>
+        </section>
 
-      <section class="address-form-section">
-        <h2>주소 정보 입력</h2>
-        <p class="address-required-hint">
-          판매자와 구매자의 모든 항목을 입력해야 다음 화면으로 이동할 수 있어요.
-        </p>
+        <section class="address-form-section">
+            <h2>주소 정보 입력</h2>
+            <p class="address-required-hint">판매자와 구매자의 모든 항목을 입력해야 다음 화면으로 이동할 수 있어요.</p>
 
-        <!-- 현재는 정적 시연용이므로 실제 정보를 전송하거나 저장하지 않습니다.
+            <!-- 현재는 정적 시연용이므로 실제 정보를 전송하거나 저장하지 않습니다.
                  name 속성을 생략해 개인정보가 URL에 붙지 않도록 했습니다. -->
-        <form
-          class="address-form"
-          action="3. platform-complete.html"
-          method="get"
-          autocomplete="off"
-        >
-          <div class="seller-fields">
-            <h3>① 판매자 (보내는 사람)</h3>
-            <p>
-              <label for="seller-name">이름 *</label>
-              <input
-                id="seller-name"
-                type="text"
-                placeholder="판매자 이름"
-                required
-              />
-            </p>
-            <p>
-              <label for="seller-phone">연락처 *</label>
-              <input
-                type="tel"
-                id="seller-phone"
-                name="seller_phone"
-                placeholder="010-1234-5678"
-                pattern="010-[0-9]{4}-[0-9]{4}"
-                title="010-1234-5678 형식으로 입력해주세요."
-                required
-              />
-            </p>
-            <p>
-              <label for="seller-address">주소 *</label>
-              <input
-                id="seller-address"
-                type="text"
-                placeholder="판매자 도로명주소"
-                required
-              />
-            </p>
-            <p>
-              <label for="seller-detail">상세주소 *</label>
-              <input
-                id="seller-detail"
-                type="text"
-                placeholder="동, 호수 등 (해당 없으면 없음)"
-                required
-              />
-            </p>
-          </div>
+            <form class="address-form" action="3. platform-complete.html" method="get" autocomplete="off">
 
-          <div class="buyer-fields">
-            <h3>② 구매자 (받는 사람)</h3>
-            <p>
-              <label for="buyer-name">이름 *</label>
-              <input
-                id="buyer-name"
-                type="text"
-                placeholder="구매자 이름"
-                required
-              />
-            </p>
-            <p>
-              <label for="seller-phone">연락처 *</label>
-              <input
-                type="tel"
-                id="seller-phone"
-                name="seller_phone"
-                placeholder="010-1234-5678"
-                pattern="010-[0-9]{4}-[0-9]{4}"
-                title="010-1234-5678 형식으로 입력해주세요."
-                required
-              />
-            </p>
+                <div class="seller-fields">
+                    <h3>① 판매자 (보내는 사람)</h3>
+                    <p>
+                        <label for="seller-name">이름 *</label>
+                        <input id="seller-name" type="text" placeholder="판매자 이름" required>
+                    </p>
+                    <p>
+                        <label for="seller-phone">연락처 *</label>
+                        <input id="seller-phone" type="tel" placeholder="010-0000-0000" required>
+                    </p>
+                    <p>
+                        <label for="seller-address">주소 *</label>
+                        <input id="seller-address" type="text" placeholder="판매자 도로명주소" required>
+                    </p>
+                    <p>
+                        <label for="seller-detail">상세주소 *</label>
+                        <input id="seller-detail" type="text" placeholder="동, 호수 등 (해당 없으면 없음)" required>
+                    </p>
+                </div>
 
-            <p>
-              <label for="buyer-address">주소 *</label>
-              <input
-                id="buyer-address"
-                type="text"
-                placeholder="구매자 도로명주소"
-                required
-              />
-            </p>
-            <p>
-              <label for="buyer-detail">상세주소 *</label>
-              <input
-                id="buyer-detail"
-                type="text"
-                placeholder="동, 호수 등 (해당 없으면 없음)"
-                required
-              />
-            </p>
-          </div>
+                <div class="buyer-fields">
+                    <h3>② 구매자 (받는 사람)</h3>
+                    <p>
+                        <label for="buyer-name">이름 *</label>
+                        <input id="buyer-name" type="text" placeholder="구매자 이름" required>
+                    </p>
+                    <p>
+                        <label for="buyer-phone">연락처 *</label>
+                        <input id="buyer-phone" type="tel" placeholder="010-0000-0000" required>
+                    </p>
+                    <p>
+                        <label for="buyer-address">주소 *</label>
+                        <input id="buyer-address" type="text" placeholder="구매자 도로명주소" required>
+                    </p>
+                    <p>
+                        <label for="buyer-detail">상세주소 *</label>
+                        <input id="buyer-detail" type="text" placeholder="동, 호수 등 (해당 없으면 없음)" required>
+                    </p>
+                </div>
 
-          <div class="address-actions">
-            <button type="submit" class="address-return-button">
-              주소 입력 완료 · 도토리마켓으로 돌아가기
-            </button>
-            <p>
-              ※ 정적 시연용입니다. 모든 칸을 채웠는지만 검사하고, 실제
-              개인정보는 저장하거나 전송하지 않습니다.<br />반드시 가상의 예시
-              정보를 입력해 주세요.
-            </p>
-          </div>
-        </form>
-      </section>
+                <div class="address-actions">
+                    <button type="submit" class="address-return-button">
+                        주소 입력 완료 · 도토리마켓으로 돌아가기
+                    </button>
+                    <p>※ 정적 시연용입니다. 모든 칸을 채웠는지만 검사하고, 실제 개인정보는 저장하거나 전송하지 않습니다.<br>반드시 가상의 예시 정보를 입력해 주세요.</p>
+                </div>
+            </form>
+        </section>
 
-      <section class="address-notice">
-        <h2>주소 보호 안내</h2>
-        <ul>
-          <li>
-            실제 서비스에서는 zip콕에서 주소를 암호화해 관리하도록 설계합니다.
-          </li>
-          <li>도토리마켓에는 실제 주소 대신 SAFE 코드만 전달합니다.</li>
-          <li>택배 예약 시에만 택배사에 필요한 주소를 전달합니다.</li>
-        </ul>
-      </section>
+        <section class="address-notice">
+            <h2>주소 보호 안내</h2>
+            <ul>
+                <li>실제 서비스에서는 zip콕에서 주소를 암호화해 관리하도록 설계합니다.</li>
+                <li>도토리마켓에는 실제 주소 대신 SAFE 코드만 전달합니다.</li>
+                <li>택배 예약 시에만 택배사에 필요한 주소를 전달합니다.</li>
+            </ul>
+        </section>
     </main>
 
     <footer><p>zip콕 · Open Source Project</p></footer>
-  </body>
+</body>
 </html>
