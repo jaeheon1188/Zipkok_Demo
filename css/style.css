@@ -995,17 +995,16 @@ footer p {
 }
 
 
-/* 판매자·구매자 입력값 분리: 페이지 이동 중에는 각자 값 유지 */
+/* 정적 체험판: 판매자·구매자 필수 입력창 8개를 모두 표시 */
+.seller-fields,
 .buyer-fields {
-    display: none;
-}
-
-.address-form:has(#role-buyer:checked) .seller-fields {
-    display: none;
-}
-
-.address-form:has(#role-buyer:checked) .buyer-fields {
     display: block;
+}
+
+.buyer-fields {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid #e9e2f5;
 }
 
 
