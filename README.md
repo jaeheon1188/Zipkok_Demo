@@ -44,6 +44,12 @@ HTML과 CSS를 중심으로 사용자가 서비스를 직관적으로 이용할 
 
 **팀 프로젝트 GitHub:** https://github.com/amhaeng-eosa/zipkok
 
+**체험판 링크:**
+https://jaeheon1188.github.io/Zipkok_Demo/
+
+**백엔드 연동용 GitHub:**
+https://github.com/jaeheon1188/zipkok_backend_ready
+
 본 저장소는 팀 프로젝트와 별도로 진행하는 개인 프론트엔드 작업 공간이며, 추후 팀원들과 협의하여 통합할 예정입니다.
 
 ---
